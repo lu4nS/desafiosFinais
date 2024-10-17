@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Filmes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Filmes</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Buscar filmes..." />
+            <button onclick="searchMovies()">Buscar</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="movie-list" class="movie-list"></section>
+    </main>
+
+    <div id="movieModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.menu-item {
+    display: inline-block;
+    margin-right: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .menu-item:hover {
+    background-color: #ccc;
+    font-weight: bold;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }

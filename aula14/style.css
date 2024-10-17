@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.search-bar {
+    margin-top: 20px;
+}
+
+.search-bar input {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+}
+
+.movie-card img {
+    width: 100%;
+}
+
+.movie-card h3 {
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%;
+    max-width: 800px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.modal-content-container img {
+    width: 40%;
+    border-radius: 8px;
+}
+
+.modal-content-container .movie-info {
+    width: 60%;
+    text-align: left;
+}
+
+.modal-content-container .movie-info p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
